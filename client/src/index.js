@@ -9,4 +9,13 @@ import { createBrowserHistory } from "history";
 import store from "./store";
 import history from "./history";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export const browserHistory = createBrowserHistory();
+
+ReactDOM.render(
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>,
+  document.getElementById('root')
+);
