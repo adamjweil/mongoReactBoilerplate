@@ -1,7 +1,6 @@
 import axios from 'axios';
 import {
   REGISTER_START,
-  REGISTER,
   REGISTER_SUCCESS,
   LOGIN_START,
   LOGIN_SUCCESS,

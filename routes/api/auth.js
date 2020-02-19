@@ -5,7 +5,6 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const config = require("config");
 const { check, validationResult } = require("express-validator");
-
 const User = require("../../models/User");
 
 router.get("/test", (req, res) => res.send("Tests Route"));
